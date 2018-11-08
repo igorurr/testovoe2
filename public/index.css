@@ -2,6 +2,92 @@ html {
   box-sizing: border-box;
 }
 
+
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+#Filtrate {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#Filtrate .Search {
+  margin-right: 5px;
+}
+
+
+
+#DataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#DataTable td {
+  padding: 6px;
+}
+
+#DataTable td.Selected {
+  background: #f0f0f0;
+}
+
+#DataTable tr:nth-child(2n) td.Selected {
+  background: #e2e2e2;
+}
+
+#DataTable tr {
+  background: #ffffff;
+  border-bottom: 2px solid #c6c6c6;
+}
+
+#DataTable tr:nth-child(2n) {
+  background: #f0f0f0;
+}
+
+#DataTable tr:first-child,
+#DataTable tr:last-child {
+  border-bottom: 2px solid #565656 !important;
+}
+
+
+
+#DataTableHeader {
+}
+#DataTableHeader td {
+  font-weight: bold;
+  padding: 6px 6px 6px 16px;
+}
+
+
+
+#Pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+#Pagination button {
+  margin: 11px;
+  width: 35px;
+  height: 35px;
+}
+
+#Pagination button:not([class="Selected"]) {
+  background: none;
+  border: none;
+}
+
+#Pagination .Previous,
+#Pagination .Next {
+  width: auto;
+}
+
+
+
 *,
 *::after,
 *::before {
